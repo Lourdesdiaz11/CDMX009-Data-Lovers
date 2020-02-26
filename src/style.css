@@ -1,0 +1,46 @@
+.theme{
+  background-image: url("https://i.ibb.co/YQVHh1P/fondo-pokemon2.png");
+  position: relative;
+  width: 1350px;
+  height: 1024px;
+  background-attachment: fixed;
+  margin: -10px -10px;
+}
+.pikachu{
+  position: absolute;
+  left: 80px;
+  top: 0px;
+}
+.logo_pokemon{
+  position: absolute;
+  left: 530px;
+  top: 0px;
+}
+.pokemonball{
+  position: absolute;
+  left: 1200px;
+  top: 0px;
+}
+.container_welcome{
+  position: absolute;
+  height: 400px;
+  width: 1070px;
+  margin:200px 150px;
+  border-radius: 20px;
+  background-color:#3532CC;
+}
+.text_welcome{
+  position: absolute;
+  left: 500px;
+  top: 300px;
+  color: yellow;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.ash_boy{
+  position: absolute;
+  left: 230px;
+  top: 220px;
+}
