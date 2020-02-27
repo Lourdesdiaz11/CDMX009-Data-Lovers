@@ -1,4 +1,4 @@
-.theme{
+body{
   background-image: url("https://i.ibb.co/YQVHh1P/fondo-pokemon2.png");
   position: relative;
   width: 1350px;
@@ -9,17 +9,17 @@
 .pikachu{
   position: absolute;
   left: 80px;
-  top: 0px;
+  top: 20px;
 }
 .logo_pokemon{
   position: absolute;
   left: 530px;
-  top: 0px;
+  top: 20px;
 }
 .pokemonball{
   position: absolute;
   left: 1200px;
-  top: 0px;
+  top: 50px;
 }
 .container_welcome{
   position:absolute;
@@ -29,8 +29,6 @@
   border-radius: 20px;
   background-color:#3532CC;
 }
-
-
 .text_welcome{
   text-align: justify;
   position: absolute;
@@ -43,17 +41,16 @@
   letter-spacing: 1px;
   font-size: 20px;
 }
-
 .ash_boy{
   position: absolute;
-  left: 230px;
-  top: 220px;
+  left: 150px;
+  top: 280px;
 }
 #theme1{
   display: none;
 }
 #meet1{
   float:right;
-  margin: 490px 550px;
+  margin: 590px 860px;
   position:absolute;
 }

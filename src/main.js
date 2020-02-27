@@ -6,7 +6,8 @@ function showAndHide (){
 
   let screen = document.getElementById("theme");
   screen.style = "display:none";
-  document.getElementById('theme2').style.display ="block";
+  document.getElementById('theme1').style.display ="block";
+
 }
 
-document.getElementById("meet").onclick = function() {showAndHide()};
+document.getElementById("meet1").onclick = function() {showAndHide()};
