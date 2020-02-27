@@ -29,9 +29,13 @@
   border-radius: 20px;
   background-color:#3532CC;
 }
+
+
 .text_welcome{
+  text-align: justify;
   position: absolute;
   left: 500px;
+  right: 300px;
   top: 300px;
   color: yellow;
   font-style: normal;
@@ -39,6 +43,7 @@
   letter-spacing: 1px;
   font-size: 20px;
 }
+
 .ash_boy{
   position: absolute;
   left: 230px;
