@@ -2,7 +2,7 @@ body{
   background-image: url("https://i.ibb.co/YQVHh1P/fondo-pokemon2.png");
   position: relative;
   width: 1350px;
-  height: 1024px;
+  height:504px;
   background-attachment: fixed;
   margin: -10px -10px;
 }
@@ -50,7 +50,15 @@ body{
   display: none;
 }
 #meet1{
+  background-color: white;
+  color: black;
+    border-radius: 20px;
   float:right;
-  margin: 590px 860px;
+  margin: 550px 930px;
   position:absolute;
+  padding: 10px 25px;
+}
+#meet1:hover {
+background-color: yellow;
+color: black;
 }
