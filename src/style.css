@@ -11,16 +11,21 @@ body{
   position: absolute;
   left: 80px;
   top: 20px;
+  flex: 1 1 auto;
 }
 .logo_pokemon{
   position: absolute;
   left: 530px;
   top: 20px;
+  flex: 1 1 auto;
+
 }
 .pokemonball{
   position: absolute;
   left: 1200px;
   top: 50px;
+  flex: 1 1 auto;
+
 }
 .container_welcome{
   position:absolute;
@@ -29,6 +34,8 @@ body{
   margin:200px 50px;
   border-radius: 20px;
   background-color:#3532CC;
+  flex: 1 1 auto;
+
 }
 .text_welcome{
   text-align: justify;
@@ -41,14 +48,20 @@ body{
   line-height: 1;
   letter-spacing: 1px;
   font-size: 20px;
+  flex: 1 1 auto;
+
 }
 .ash_boy{
   position: absolute;
   left: 150px;
   top: 280px;
+  flex: 1 1 auto;
+
 }
 #theme1{
   display: none;
+  flex: 1 1 auto;
+
 }
 #meet1{
   background-color: white;
@@ -58,8 +71,12 @@ body{
   margin: 550px 930px;
   position:absolute;
   padding: 10px 25px;
+  flex: 1 1 auto;
+
 }
 #meet1:hover {
 background-color: yellow;
 color: black;
+flex: 1 1 auto;
+
 }
