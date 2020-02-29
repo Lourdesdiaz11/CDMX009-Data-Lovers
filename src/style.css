@@ -5,6 +5,7 @@ body{
   height:504px;
   background-attachment: fixed;
   margin: -10px -10px;
+  flex: 1 1 auto;
 }
 .pikachu{
   position: absolute;
