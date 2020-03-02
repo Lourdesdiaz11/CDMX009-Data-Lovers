@@ -1,4 +1,4 @@
-export default {
+var POKEMON = {
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -4083,4 +4083,5 @@ export default {
       "Dark"
     ]
   }]
-};
+}
+;;
