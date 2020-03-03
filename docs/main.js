@@ -15,7 +15,9 @@ function showAndHide (){
 const printData = (data) => {
   root.innerHTML = '';
   data.forEach(pokemon => {
-    let namePokemon = `<div class="tarjeta"><img  height="100" width="100" src ="${pokemon.img}"><br>${pokemon.num}<br> ${pokemon.name} <br> ${pokemon.type}`
+    let namePokemon = `<div class="tarjeta"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}     
+<p> TYPE: ${pokemon.type} </p>
+`
     root.insertAdjacentHTML("beforeend", namePokemon);
   })
 }

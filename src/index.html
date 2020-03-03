@@ -26,16 +26,21 @@
       <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="100" width="100"></div>
     </div>
       <div class = "container_welcome">
-        <form method="get">
- <input list="pokedex" name="pokedex">
- <datalist id="_filterPokedex">
-   <option value="A_Z">A - Z </option>
-   <option value="Z_A">Z - A </option>
-   <option value="type_Element">Tipo Elemento
-   <option value="water">Agua</option>
-   </option>
- </datalist>
- <input type="submit">
+        <form action="" target="_blank" class="filter">  Elije una opcion:
+            <select name="_filter" required>
+               <option value="">Filtrar</option>
+                <optgroup label="Por..">
+                <option value="aZ">A - Z</option>
+               <option value="zA">Z - A</option>
+      </optgroup>
+      <optgroup label="Tipo Elemento">
+        <option value="water">Agua</option>
+        <option></option>
+        <option></option>
+      </optgroup>
+    </select>
+    <input type="submit" value="Enviar">
+  </p>
 </form>
          <div id="root"></div></div>
     </div>
