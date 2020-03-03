@@ -12,7 +12,7 @@ body{
 }
 .pikachu{
   flex-grow: 1;
-  
+
 }
 .logo_pokemon{
   flex-grow: 1;
@@ -74,15 +74,15 @@ body{
 
 }
 .tarjeta{
-    width: 15%;
+    width: auto;
 
     background-color: gray;
     margin: 50px;
-    border-radius: 20px;
+    border-radius: 8px;
     display:flex;
 
-
-flex-wrap: wrap;
+align-items: center;
+flex-direction: column;
 
 }
 #root{
