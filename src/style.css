@@ -12,6 +12,7 @@ body{
 }
 .pikachu{
   flex-grow: 1;
+  
 }
 .logo_pokemon{
   flex-grow: 1;
