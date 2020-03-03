@@ -12,26 +12,33 @@
     <div class= "theme" id ="theme">
       <div class = "pikachu"><img src="https://i.ibb.co/Yyqhs4L/pokemon-PNG9.png" height="120" width="120"></div>
       <div class = "logo_pokemon"><img src="https://i.ibb.co/z2Hd0Tb/pokemon-logo.png" height="130" width="300"></div>
-      <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="100" width="100"></div>
-      <div class = "container_welcome"></div>
-      <div class = "text_welcome"> BIENVENIDA (O)  <br> <br> La Pokédex alberga una pequeña entrada sobre cada Pokémon, explicando algunos de sus rasgos. Cada entrada cuenta con la especie del Pokémon, su huella, su tipo o tipos elementales, su altura, su peso y finalmente su descripción Pokédex.</div>
+      <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="110" width="110"></div>
+    </div>
+    <div class = "container_welcome1">
       <div class = "ash_boy"><img src="https://i.ibb.co/JdBbSpd/1528080657ash-pokemon-png-picture.png" height="350" width="250"> </div>
-      <div class = "meet"><input id ="meet1" type= "button" value="Conocelos" onclick="showAndHide();"></div>
-      </div>
+      <div class = "text_welcome"><h1> BIENVENIDA (O)</h1> <br> <br> La Pokédex alberga una pequeña entrada sobre cada Pokémon, explicando algunos de sus rasgos. Cada entrada cuenta con la especie del Pokémon, su huella, su tipo o tipos elementales, su altura, su peso y finalmente su descripción Pokédex.<br><br><br><br>
+      <input href="#" id ="meet1" class="meet" type= "button" value="Conócelos" onclick="showAndHide();">
+</div>
 </section>
-
 <section id = "_welcome1">
     <div class= "theme" id ="theme1">
       <div class = "pikachu"><img src="https://i.ibb.co/Yyqhs4L/pokemon-PNG9.png" height="120" width="120"></div>
       <div class = "logo_pokemon"><img src="https://i.ibb.co/z2Hd0Tb/pokemon-logo.png" height="130" width="300"></div>
       <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="100" width="100"></div>
-      <div class = "container_welcome">   <ul>
-           <li><a href="#" id="showPokemons">Pokelist</a></li>
-             </ul><div id="root"></div></div>
-
-
-
-
+    </div>
+      <div class = "container_welcome">
+        <form method="get">
+ <input list="pokedex" name="pokedex">
+ <datalist id="_filterPokedex">
+   <option value="A_Z">A - Z </option>
+   <option value="Z_A">Z - A </option>
+   <option value="type_Element">Tipo Elemento
+   <option value="water">Agua</option>
+   </option>
+ </datalist>
+ <input type="submit">
+</form>
+         <div id="root"></div></div>
     </div>
 </section>
 
