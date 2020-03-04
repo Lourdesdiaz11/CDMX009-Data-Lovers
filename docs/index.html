@@ -16,7 +16,7 @@
     <div class = "container_welcome1">
       <div class = "ash_boy"><img src="https://i.ibb.co/JdBbSpd/1528080657ash-pokemon-png-picture.png" height="350" width="250"> </div>
       <div class = "text_welcome"><h1> BIENVENIDA (O)</h1> <br> <br> La Pokédex alberga una pequeña entrada sobre cada Pokémon, explicando algunos de sus rasgos. Cada entrada cuenta con la especie del Pokémon, su huella, su tipo o tipos elementales, su altura, su peso y finalmente su descripción Pokédex.<br><br><br><br>
-      <input href="#" id ="meet1" class="meet" type= "button" value="Conócelos" onclick="showAndHide();">
+      <input  id ="meet1" class="meet" type= "button" value="Conócelos" onclick="showAndHide();">
 </div>
 </section>
 <section id = "_welcome1">
@@ -26,22 +26,30 @@
       <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="100" width="100"></div>
     </div>
       <div class = "container_welcome">
-        <form action="" target="_blank" class="filter">  Elije una opcion:
-            <select name="_filter" required>
-               <option value="">Filtrar</option>
-                <optgroup label="Por..">
-                <option value="aZ">A - Z</option>
-               <option value="zA">Z - A</option>
-      </optgroup>
-      <optgroup label="Tipo Elemento">
-        <option value="water">Agua</option>
-        <option></option>
-        <option></option>
-      </optgroup>
-    </select>
-    <input type="submit" value="Enviar">
-  </p>
-</form>
+        <nav class="topnav">
+  <ul>
+
+    <li class="dropdown">Elementos</a>
+
+      <div class="dropdown-content">
+        <p class="elementType" href="#" id="showAll"><a>Todos</a></p>
+        <p id ="Water" class="elementType"><a >Agua</a></p>
+        <p id ="Flying" class="elementType"><a href="#" >Aire</a></p>
+        <p id ="Dragon" class="elementType"><a href="#" > Dragon </a></p>
+        <p id ="Electric" class="elementType"><a href="#" >Electrico</a></p>
+              <p id ="Ghost" class="elementType"><a href="#" >Fantasma</a></p>
+              <p id ="Fire" class="elementType"><a href="#" >Fuego</a></p>
+              <p id ="Ice" class="elementType"><a href="#" >Hielo</a></p>
+              <p id ="Bug" class="elementType"><a href="#" >Insectos</a></p>
+              <p id ="Fighting" class="elementType"><a href="#" >Pelea</a></p>
+              <p id ="Grass" class="elementType"><a href="#" >Planta</a></p>
+              <p id ="Psychic" class="elementType"><a href="#" >Psiquico</a></p>
+              <p id ="Normal" class="elementType"><a href="#" >Normal</a></p>
+              <p id ="Rock" class="elementType"><a href="#" >Roca</a></p>
+              <p id ="Ground" class="elementType"><a href="#" >Tierra</a></p>
+              <p id ="Poison" class="elementType"><a href="#" >Veneno</a></p>
+      </ul>
+    </nav>
          <div id="root"></div></div>
     </div>
 </section>

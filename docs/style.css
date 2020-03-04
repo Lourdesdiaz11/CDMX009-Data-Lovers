@@ -70,25 +70,64 @@ body{
   flex-direction: column;
 
 }
-.filter_AZ{
-
-}
 .tarjeta{
     width: auto;
-
     background-color: gray;
     margin: 50px;
     border-radius: 8px;
     display:flex;
-
-align-items: center;
-flex-direction: column;
-
+    align-items: center;
+    flex-direction: column;
 }
 #root{
-
   margin: auto;
   display: flex;
   flex-wrap:wrap;
-
 }
+
+   .dropdown-content {
+    display: none;
+    font-family: 'Nova Flat', cursive;
+    position: absolute;
+    align-content: center;
+     background-color: blue;
+
+    /* min-width:245px;  max-width:400px; */
+    /* box-shadow: rgb(5, 13, 13); */
+    /*z-index: 1;*/
+
+   }
+  .dropdown-content a {
+    color:white;
+    padding: 15px;
+    text-decoration: inherit;
+    display: inline-block;
+    text-align: center;
+
+
+   }
+
+   /* .dropdown-content a:hover { */
+    /* background-color: red; */
+    /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
+
+   /* } */
+
+   .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+   a:hover {
+    /* background-color: red; */
+    background-image: linear-gradient(100deg,	#FFFF00 0%, 	#C3BB06  74%);
+  }
+
+    .elementType{
+     /* background-color: blue; */
+     background-image: lnear-gradient(315deg,#FFA500 0%, 	#F6EB09  74%);
+
+
+
+    }
