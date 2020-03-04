@@ -1,3 +1,5 @@
+
+
 window.pokemon = {
   filterPokemons: (dataPokemon, elementPokemon) => {
     return dataPokemon.filter(pokemon => {
@@ -28,10 +30,5 @@ window.pokemon = {
     return sortName
 
   },
-  totalWeightPokemon: (pokemonArray) => {
-    const pokemonTotalWeight = pokemonArray.reduce((total, dataPokemon) => {
-      return total += parseFloat(dataPokemon.weight);
-    }, 0)
-    return pokemonTotalWeight;
-  }
+
 }
