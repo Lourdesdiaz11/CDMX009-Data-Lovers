@@ -31,8 +31,6 @@ export function sortbyName(pokemonArray) {
 }
 
 /*
-
-
 data.pokemon = {
   filterPokemons: (dataPokemon, elementPokemon) => {
     return dataPokemon.filter(pokemon => {
@@ -43,7 +41,4 @@ data.pokemon = {
         }
       }
     });
-
-
-
   }}*/

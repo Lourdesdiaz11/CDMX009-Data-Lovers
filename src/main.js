@@ -8,13 +8,14 @@ import {filterType,sortbyName} from './data.js';
 let root = document.querySelector('#root'); //dibujamos la tabla
 let elementType = document.getElementsByClassName('elementType');
 const _showAll = document.getElementById('showAll');
+let _orderAZ = document.getElementById('orderAZ');
 const dataPokemon = data.pokemon;
 
 //funcion llenado tarjeta pokemon
 function printData(){
   root.innerHTML = '';
   data.pokemon.forEach(pokemon =>{ //recorremos todos los productos
-   let namePokemon = `<div class="tarjeta"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
+   let namePokemon = `<div class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
     <dt>TYPE: ${pokemon.type} </dt>
     <dt>HEIGHT:${pokemon.height}</dt>
     <dt>WEIGHT:${pokemon.weight}</dt>
@@ -33,7 +34,7 @@ function printData(){
  function printData1(data){
    root.innerHTML = '';
    data.forEach(pokemon =>{ //recorremos todos los productos
-    let namePokemon = `<div class="tarjeta"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
+    let namePokemon = `<div class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
      <dt>TYPE: ${pokemon.type} </dt>
      <dt>HEIGHT:${pokemon.height}</dt>
      <dt>WEIGHT:${pokemon.weight}</dt>
@@ -67,4 +68,9 @@ document.getElementById("meet1").addEventListener('click',showAndHide);
 
 _showAll.addEventListener("click",() => {
    printData(dataPokemon)
+})
+_orderAZ.addEventListener("click",() => {
+  printData(dataPokemon)
+  sortbyName(dataPokemon)
+
 })
