@@ -6,11 +6,12 @@ import {filterType,sortbyName} from './data.js';
 // import {typeFilter} from './data.js';
 
 let root = document.querySelector('#root'); //dibujamos la tabla
-let elementType = document.getElementsByClassName('elementType')
+let elementType = document.getElementsByClassName('elementType');
+const _showAll = document.getElementById('showAll');
 const dataPokemon = data.pokemon;
 
 //funcion llenado tarjeta pokemon
-function printData(dataPokemon){
+function printData(){
   root.innerHTML = '';
   data.pokemon.forEach(pokemon =>{ //recorremos todos los productos
    let namePokemon = `<div class="tarjeta"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
@@ -63,3 +64,7 @@ function showAndHide (){
 }
 
 document.getElementById("meet1").addEventListener('click',showAndHide);
+
+_showAll.addEventListener("click",() => {
+   printData(dataPokemon)
+})
