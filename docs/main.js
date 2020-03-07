@@ -1,19 +1,24 @@
 
 import data from './data/pokemon/pokemon.js';
-import {filterType,sortbyName} from './data.js';
+import {filterType,sortbyNameAZ,sortbyNameZA} from './data.js';
 
 
 // import {typeFilter} from './data.js';
 
 let root = document.querySelector('#root'); //dibujamos la tabla
-let elementType = document.getElementsByClassName('elementType')
-const dataPokemon = data.pokemon;
+let elementType = document.getElementsByClassName('elementType');
+const _showAll = document.getElementById('showAll');
+const currentPokemon = data.pokemon;
+// let _orderAZ = document.getElementById('orderAZ');
+// let _orderZA = document.getElementById('orderZA');
+
+
 
 //funcion llenado tarjeta pokemon
-function printData(dataPokemon){
-  root.innerHTML = '';
+function printData(){
+
   data.pokemon.forEach(pokemon =>{ //recorremos todos los productos
-   let namePokemon = `<div class="tarjeta"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
+   let namePokemon = `<div class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
     <dt>TYPE: ${pokemon.type} </dt>
     <dt>HEIGHT:${pokemon.height}</dt>
     <dt>WEIGHT:${pokemon.weight}</dt>
@@ -29,10 +34,11 @@ function printData(dataPokemon){
  })}
  document.getElementById("meet1").addEventListener('click',printData);
 //funcion filtros por tipo de elemento
+
  function printData1(data){
-   root.innerHTML = '';
+  root.innerHTML = '';
    data.forEach(pokemon =>{ //recorremos todos los productos
-    let namePokemon = `<div class="tarjeta"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
+    let namePokemon = `<div class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
      <dt>TYPE: ${pokemon.type} </dt>
      <dt>HEIGHT:${pokemon.height}</dt>
      <dt>WEIGHT:${pokemon.weight}</dt>
@@ -50,9 +56,9 @@ function printData(dataPokemon){
 for (let i = 0; i < elementType.length; i++) {
   elementType[i].addEventListener('click', () => {
     let elementPokemon = elementType[i].id;
-    let pokemonType = filterType(dataPokemon, elementPokemon);
-    let filter=sortbyName(pokemonType);
-     printData1(filter);
+    let pokemonType = filterType(data.pokemon, elementPokemon);
+    let filter=sortbyNameAZ(pokemonType);
+    printData1(filter);
   });
 }
 //funcion oculta pantalla de BIENVENIDA
@@ -63,3 +69,27 @@ function showAndHide (){
 }
 
 document.getElementById("meet1").addEventListener('click',showAndHide);
+
+_showAll.addEventListener("click",() => {
+   printData(data.pokemon)
+})
+
+let selectSort = document.getElementById("select");
+   selectSort.addEventListener("change", () => {
+    let valueSelect = selectSort.value;
+   	if(valueSelect === 'orderAZ'){
+		sortbyNameAZ(currentPokemon);
+    }else if(valueSelect === 'orderZA'){
+       sortbyNameZA(currentPokemon);
+    }
+	    printData1(currentPokemon);
+});
+/*
+_orderAZ.addEventListener("click",() => {
+    sortbyNameAZ(data.pokemon)
+    printData1(data.pokemon)
+})
+_orderZA.addEventListener("click",() => {
+    sortbyNameZA(data.pokemon)
+    printData1(data.pokemon)
+})*/
