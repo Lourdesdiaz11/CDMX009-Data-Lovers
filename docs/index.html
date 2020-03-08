@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <title>Pokédex</title>
-
     <link rel="stylesheet" href="style.css" media="screen and (min-width: 200px)">
   </head>
   <body>
@@ -13,10 +12,19 @@
       <div class = "logo_pokemon"><img src="https://i.ibb.co/z2Hd0Tb/pokemon-logo.png" height="130" width="300"></div>
       <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="110" width="110"></div>
     </div>
+
+    <div>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a id="meet1">Pokequex  </a></li>
+
+  </ul>
+    </div>
+
     <div class = "container_welcome1">
       <div class = "ash_boy"><img src="https://i.ibb.co/JdBbSpd/1528080657ash-pokemon-png-picture.png" height="350" width="250"> </div>
       <div class = "text_welcome"><h1> BIENVENIDA (O)</h1> <br> <br> La Pokédex alberga una pequeña entrada sobre cada Pokémon, explicando algunos de sus rasgos. Cada entrada cuenta con la especie del Pokémon, su huella, su tipo o tipos elementales, su altura, su peso y finalmente su descripción Pokédex.<br><br><br><br>
-      <input  id ="meet1" class="meet" type= "button" value="Conócelos" >
+      <!-- <input  id ="meet1" class="meet" type= "button" value="Conócelos" > -->
 </div>
 </section>
 <section id = "_welcome1">
@@ -25,18 +33,52 @@
       <div class = "logo_pokemon"><img src="https://i.ibb.co/z2Hd0Tb/pokemon-logo.png" height="130" width="300"></div>
       <div class = "pokemonball"><img src="https://i.ibb.co/kM47sdh/pokebola.png" height="100" width="100"></div>
     </div>
-      <div class = "container_welcome">
-        <!-- <nav class="topnav" id ="show"> -->
-  <ul>
 
-    <li class="dropdown">Elementos</a>
-
+    <div>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a id="meet1">Pokequex  </a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Tipo de Elemento</a>
       <div class="dropdown-content">
-        <p class="elementType" href="#" id="showAll"><a>Todos</a></p>
-        <p id ="Water" class="elementType"><a>Agua</a></p>
-        <p id ="Flying" class="elementType"><a>Aire</a></p>
-        <p id ="Dragon" class="elementType"><a> Dragon </a></p>
-        <p id ="Electric" class="elementType"><a> Electrico</a></p>
+        <a class="elementType" href="#" id="showAll">Todos</a>
+        <a id="Water" class="elementType">Agua</a>
+        <a id ="Flying" class="elementType">Aire</a>
+        <a id ="Dragon" class="elementType">Dragon</a>
+        <a id ="Electric" class="elementType">Electrico</a>
+        <a id ="Ghost" class="elementType">Fantasma</a>
+        <a id ="Fire" class="elementType">Fuego</a>
+        <a id ="Ice" class="elementType">Hielo</a>
+        <a id ="Bug" class="elementType">Insectos</a>
+        <a id ="Fighting" class="elementType">Pelea</a>
+        <a id ="Grass" class="elementType">Planta</a>
+        <a id ="Psychic" class="elementType">Psiquico</a>
+        <a id ="Normal" class="elementType">Normal</a>
+        <a id ="Rock" class="elementType">Roca</a>
+        <a id ="Ground" class="elementType">Tierra</a>
+        <a id ="Poison" class="elementType">Veneno</a>
+
+      </div>
+</li>
+
+  <select name="selectOption" id="select" >
+              <option value="defaultOption" selected>Ordenar por</option>
+              <option value="orderAZ" id="orderAZ">A - Z</option>
+              <option value="orderZA" id="orderZA">Z - A</option>
+              </select>
+
+
+</ul>
+    </div>
+
+      <div class = "container_welcome">
+    <!-- <ul><li class="dropdown">Elementos</a> -->
+      <div class="dropdown-content">
+              <p class="elementType" href="#" id="showAll"><a>Todos</a></p>
+              <p id ="Water" class="elementType"><a>Agua</a></p>
+              <p id ="Flying" class="elementType"><a>Aire</a></p>
+              <p id ="Dragon" class="elementType"><a> Dragon </a></p>
+              <p id ="Electric" class="elementType"><a> Electrico</a></p>
               <p id ="Ghost" class="elementType"><a>Fantasma</a></p>
               <p id ="Fire" class="elementType"><a >Fuego</a></p>
               <p id ="Ice" class="elementType"><a>Hielo</a></p>
@@ -48,28 +90,12 @@
               <p id ="Rock" class="elementType"><a>Roca</a></p>
               <p id ="Ground" class="elementType"><a>Tierra</a></p>
               <p id ="Poison" class="elementType"><a>Veneno</a></p>
-          </div>  </li>
-      </ul>
-    <!-- </nav> -->
+          </div>
+        </li></ul>
 
-
-
-
-
-  <div class="">
-    <select name="selectOption" id="select" class="form-control">
-                                <option value="defaultOption" selected>Ordenar por</option>
-                                <option value="orderAZ" id="orderAZ">A - Z</option>
-                                <option value="orderZA" id="orderZA">Z - A</option>
-                            </select>
-
-
-         <div id="root"></div></div>
-
+              <div id="root"></div>
+            </div>
 </section>
-
-  <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="data.js"></script> -->
   <script type="module" src="main.js"></script>
   </body>
 </html>
