@@ -5,8 +5,10 @@ import {filterType,sortbyNameAZ,sortbyNameZA,sortbyNumber1_151} from './data.js'
 let root = document.querySelector('#root'); //dibujamos la tabla
 let elementType = document.getElementsByClassName('elementType');
 const _showAll = document.getElementById('showAll');
+let order =document.getElementById('Order');
 const allPokemon = data.pokemon;
 let currentPokemon =allPokemon;
+
 //funcion llenado tarjeta pokemon
 function printData(){
     data.pokemon.forEach(pokemon =>{ //recorremos todos los productos
@@ -49,6 +51,7 @@ for (let i = 0; i < elementType.length; i++) {
     let pokemonType = filterType(currentPokemon, elementPokemon);
     let filter=sortbyNameAZ(pokemonType);
     printData1(filter);
+
   });
 }
 //funcion oculta pantalla de BIENVENIDA
@@ -63,6 +66,7 @@ _showAll.addEventListener("click",() => {
   sortbyNumber1_151(currentPokemon)
    printData(currentPokemon)
 })
+
 //funcion de filtrado de A-Z y de Z-A
 let selectSort = document.getElementById("select");
    selectSort.addEventListener("change", () => {
@@ -72,6 +76,8 @@ let selectSort = document.getElementById("select");
 		pokemonsOrdered =sortbyNameAZ(currentPokemon);
     }else if(valueSelect === 'orderZA'){
       pokemonsOrdered = sortbyNameZA(currentPokemon);
+    }else if (valueSelect==="defaultOption"){
+        pokemonsOrdered = sortbyNumber1_151(currentPokemon);
     }
 	    printData1(pokemonsOrdered);
 });
