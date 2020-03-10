@@ -150,6 +150,10 @@ SELECT{
     margin: 4px auto;
     border-radius: .3em;
     -moz-appearance: none;
+<<<<<<< HEAD
     background-color: #fff;
 
   }
+=======
+    background-color: #fff;}
+>>>>>>> b76920f0ac2022fc3e8de185ee96d0da8eb2bc3c
