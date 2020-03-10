@@ -64,7 +64,7 @@ body{
 .container_welcome{
   width: 100%;
   margin:auto;
-  border-radius: 20px;
+  border-radius: 10 px;
   background-color:#3532CC;
   display: flex;
   flex-direction: column;
@@ -85,49 +85,50 @@ body{
   flex-wrap:wrap;
 }
 
-   .dropdown-content {
-    display: none;
-    font-family: 'Nova Flat', cursive;
-    position: absolute;
-    align-content: center;
-     background-color: blue;
+.dropdown-content {
+  display: none;
+  font-family: 'Nova Flat', cursive;
+  position: absolute;
+  align-content: center;
+   background-color: rgb(122, 122, 131);
 
-    /* min-width:245px;  max-width:400px; */
-    /* box-shadow: rgb(5, 13, 13); */
-    /*z-index: 1;*/
+  /* min-width:245px;  max-width:400px; */
+  /* box-shadow: rgb(5, 13, 13); */
+  /*z-index: 1;*/
 
-   }
-  .dropdown-content a {
-    color:white;
-    padding: 15px;
-    text-decoration: inherit;
-    display: inline-block;
-    text-align: center;
+ }
+.dropdown-content a {
+  color:white;
+  padding: 15px;
+  text-decoration: inherit;
+   display: inline-block; 
+  text-align: center;
 
 
-   }
+ }
 
-   /* .dropdown-content a:hover { */
-    /* background-color: red; */
-    /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
+ /* .dropdown-content a:hover { */
+  /* background-color: red; */
+  /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
 
-   /* } */
+ /* } */
 
-   .dropdown:hover .dropdown-content {
-    display: block;
+ .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+ a:hover {
+  /* background-color: red; */
+  background-image: linear-gradient(100deg,	rgb(95, 29, 20) 0%, 	rgb(196, 77, 56)  74%);
+}
+
+  .elementType{
+   /* background-color: blue; */
+   background-image: lnear-gradient(315deg,rgb(214, 70, 59) 0%, 	rgb(133, 26, 18)  74%);
+
+
+
   }
-
-
-
-   a:hover {
-    /* background-color: red; */
-    background-image: linear-gradient(100deg,	#FFFF00 0%, 	#C3BB06  74%);
-  }
-
-    .elementType{
-     /* background-color: blue; */
-     background-image: lnear-gradient(315deg,#FFA500 0%, 	#F6EB09  74%);
-
-
-
-    }
+  
