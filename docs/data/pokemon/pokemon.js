@@ -1,4 +1,4 @@
-var POKEMON = {
+export default {
   "pokemon": [{
     "id": 1,
     "num": "001",

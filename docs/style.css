@@ -24,7 +24,7 @@ body{
   height: 500px;
   width: 100%;
   margin:auto;
-  border-radius: 20px;
+
   background-color:#3532CC;
   display: flex;
   align-items: baseline;
@@ -64,11 +64,10 @@ body{
 .container_welcome{
   width: 100%;
   margin:auto;
-  border-radius: 20px;
+
   background-color:#3532CC;
   display: flex;
   flex-direction: column;
-
 }
 .tarjeta{
     width: auto;
@@ -78,56 +77,76 @@ body{
     display:flex;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
 #root{
   margin: auto;
   display: flex;
   flex-wrap:wrap;
 }
-
-   .dropdown-content {
+.dropdown-content {
     display: none;
-    font-family: 'Nova Flat', cursive;
+
     position: absolute;
     align-content: center;
-     background-color: blue;
-
+    background-color:  #333;
     /* min-width:245px;  max-width:400px; */
     /* box-shadow: rgb(5, 13, 13); */
     /*z-index: 1;*/
-
-   }
-  .dropdown-content a {
+}
+.dropdown-content a {
     color:white;
     padding: 15px;
     text-decoration: inherit;
     display: inline-block;
     text-align: center;
-
-
-   }
-
+}
    /* .dropdown-content a:hover { */
     /* background-color: red; */
     /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
-
    /* } */
-
-   .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-
-
-
-   a:hover {
+}
+a:hover {
     /* background-color: red; */
     background-image: linear-gradient(100deg,	#FFFF00 0%, 	#C3BB06  74%);
-  }
-
-    .elementType{
+}
+.elementType{
      /* background-color: blue; */
      background-image: lnear-gradient(315deg,#FFA500 0%, 	#F6EB09  74%);
+}
+/* #_welcome2{ */
+  /* display: none; */
+/* } */
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 
+}
 
-    }
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+SELECT{   display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+  padding: .4em 1.4em .3em .8em;
+    width: 200px;
+ margin: 10px auto;
+    border-radius: .3em;
+    -moz-appearance: none;
+    background-color: #fff;}
