@@ -87,9 +87,9 @@ body{
 }
 .dropdown-content {
     display: none;
+position:fixed;
 
-
-    /* align-content: center; */
+     align-content: center;
     background-color:  #333;
     /* min-width:245px;  max-width:400px; */
     /* box-shadow: rgb(5, 13, 13); */

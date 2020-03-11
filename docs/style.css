@@ -86,11 +86,11 @@ body{
   flex-wrap:wrap;
 }
 .dropdown-content {
-    display: none;
+  display: none;
+position:fixed;
 
-
-    /* align-content: center; */
-    background-color:  #333;
+   align-content: center;
+  background-color:  #333;
     /* min-width:245px;  max-width:400px; */
     /* box-shadow: rgb(5, 13, 13); */
     /*z-index: 1;*/
