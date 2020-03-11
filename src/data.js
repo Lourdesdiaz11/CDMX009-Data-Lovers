@@ -1,5 +1,6 @@
-import data from './data/pokemon/pokemon.js';
+// import data from './data/pokemon/pokemon.js';
 
+// const pokemons {filterType,sortbyNameAZ,}
 export function filterType(allPokemon, elementPokemon) {
   let filtered = [];
       for (let i = 0; i < allPokemon.length; i++){

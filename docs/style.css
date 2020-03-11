@@ -88,7 +88,7 @@ body{
 .dropdown-content {
     display: none;
 
-    position: absolute;
+
     /* align-content: center; */
     background-color:  #333;
     /* min-width:245px;  max-width:400px; */
@@ -152,8 +152,9 @@ SELECT{
     color: #444;
     padding: .4em 1.4em .3em .8em;
     width: 200px;
-    margin: 4px auto;
+    margin: 2px auto;
     border-radius: .3em;
+
 
   }
   .tarjeta{
