@@ -1,5 +1,9 @@
 import data from './data/pokemon/pokemon.js';
 
+// export pokemons;
+
+// const pokemons ={filterType,sortbyNameAZ,sortbyNameZA,sortbyNumber1_151};
+
 export function filterType(allPokemon, elementPokemon) {
   let filtered = [];
       for (let i = 0; i < allPokemon.length; i++){
@@ -50,3 +54,15 @@ export function sortbyNumber1_151(pokemonArray) {
     });
   return sortNumber
 }
+/*
+export function filterName(allPokemon, namepokemon) {
+  let filtered1 = [];
+      for (let i = 0; i < allPokemon.length; i++){
+          for (let e = 0; e < allPokemon[i].id.length; e++) {
+              if(allPokemon[i].id[e] === elementPokemon){
+                  filtered.push(allPokemon[i]);
+              }
+          }
+      }
+      return filtered1;
+  }*/
