@@ -86,11 +86,12 @@ body{
   flex-wrap:wrap;
 }
 .dropdown-content {
-    display: none;
-position:fixed;
-
-     align-content: center;
-    background-color:  #333;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color:  #333;
     /* min-width:245px;  max-width:400px; */
     /* box-shadow: rgb(5, 13, 13); */
     /*z-index: 1;*/
@@ -162,9 +163,7 @@ SELECT{
     background-color: gray;
     margin: 50px;
     border-radius: 8px;
-    display:flex;
-    align-items: center;
-    flex-direction: column;
+
     display: flex;
     justify-content: center;
     align-items: center;
