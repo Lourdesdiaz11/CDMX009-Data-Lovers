@@ -12,7 +12,6 @@ body{
 }
 .pikachu{
   flex-grow: 1;
-
 }
 .logo_pokemon{
   flex-grow: 1;
@@ -24,7 +23,6 @@ body{
   height: 500px;
   width: 100%;
   margin:auto;
-
   background-color:#3532CC;
   display: flex;
   align-items: baseline;
@@ -64,21 +62,20 @@ body{
 .container_welcome{
   width: 100%;
   margin:auto;
-
   background-color:#3532CC;
   display: flex;
   flex-direction: column;
 }
 /*
 .tarjeta{
-    width: auto;
-    background-color: gray;
-    margin: 50px;
-    border-radius: 8px;
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    /* cursor: pointer; */
+width: auto;
+background-color: gray;
+margin: 50px;
+border-radius: 8px;
+display:flex;
+align-items: center;
+flex-direction: column;
+/* cursor: pointer; */
 /* } */
 #root{
   margin: auto;
@@ -86,59 +83,52 @@ body{
   flex-wrap:wrap;
 }
 .dropdown-content {
-  display: none;
+  display:none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   background-color:  #333;
-    /* min-width:245px;  max-width:400px; */
-    /* box-shadow: rgb(5, 13, 13); */
-    /*z-index: 1;*/
+  /* min-width:245px;  max-width:400px; */
+  /* box-shadow: rgb(5, 13, 13); */
+  z-index: 1;
 }
 .dropdown-content a {
-    color:white;
-    padding: 15px;
-    text-decoration: inherit;
-    display:inline-flex;
-    text-align: center;
-
-
-
+  color:white;
+  padding: 15px;
+  text-decoration: inherit;
+  display:inline-flex;
+  text-align: center;
 }
-   /* .dropdown-content a:hover { */
-    /* background-color: red; */
-    /* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
-   /* } */
+/* .dropdown-content a:hover { */
+/* background-color: red; */
+/* background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); */
+/* } */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 a:hover {
-    /* background-color: red; */
-    background-image: linear-gradient(100deg,	#FFFF00 0%, 	#C3BB06  74%);
+  /* background-color: red; */
+  background-image: linear-gradient(100deg,	#FFFF00 0%, 	#C3BB06  74%);
 }
 .elementType{
-     /* background-color: blue; */
-
-     background-image: lnear-gradient(315deg,#FFA500 0%, 	#F6EB09  74%);
+  /* background-color: blue; */
+  background-image: lnear-gradient(315deg,#FFA500 0%, 	#F6EB09  74%);
 }
 /* #_welcome2{ */
-  /* display: none; */
+/* display: none; */
 /* } */
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-
 }
 
 li {
   float: left;
 }
-
 li a, .dropbtn {
   display: inline-block;
   color: white;
@@ -147,55 +137,45 @@ li a, .dropbtn {
   text-decoration: none;
 }
 SELECT{
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    color: #444;
-    padding: .4em 1.4em .3em .8em;
-    width: 200px;
-    margin: 2px auto;
-    border-radius: .3em;
-
-
-  }
-  .tarjeta{
-
-    background-color: gray;
-    margin: 50px;
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-      border-radius: 12px;
-      border: solid 2px;
-      border-color: white;
-      width: 180px;
-
-
-
-  }
-
-  .tarjeta:hover .overlay {
-      display: block;
-  }
-
-  .overlay{
-      display: none;
-      position: absolute;
-      top:0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      color: white;
-      font-size: .7em;
-      padding: 5px;
-      border-radius: 12px;
-  }
-
-  .translucent{
-      background-color: black;
-      opacity: .75;
-  }
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  padding: .4em 1.4em .3em .8em;
+  width: 200px;
+  margin: 2px auto;
+  border-radius: .3em;
+}
+.tarjeta{
+  background-color: gray;
+  margin: 50px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 12px;
+  border: solid 2px;
+  border-color: white;
+  width: 180px;
+}
+.tarjeta:hover .overlay {
+  display: block;
+}
+.overlay{
+  display: none;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: .7em;
+  padding: 5px;
+  border-radius: 12px;
+}
+.translucent{
+  background-color: black;
+  opacity: .75;
+}
