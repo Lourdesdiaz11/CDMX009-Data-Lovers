@@ -1,9 +1,12 @@
-// importamos la función `example`
 import pokemons from '../src/data.js';
 
-describe('pokemons.filterType', () => {
-
+describe('pokemons', () => {
+  it('should be an object', () => {
+    expect(typeof pokemons).toBe('object');
+  });
+  describe('filterType', () => {
     it('should be a function', () => {
-      expect(typeof pokemons.filterType).toBe('function');
+      expect(typeof filterType).toBe('function');
     });
-}
+  });
+});
