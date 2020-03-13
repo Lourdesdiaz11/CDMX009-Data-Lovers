@@ -3,8 +3,7 @@ import pokemons from './data.js';
 
 const root = document.querySelector('#root'); // dibujamos la tabla
 const elementType = document.getElementsByClassName('elementType');
-const allPokemon = data.pokemon;
-const currentPokemon = allPokemon;
+const currentPokemon = data.pokemon;
 const selectSort = document.getElementById('select');
 
 // funcion llenado tarjeta pokemon
@@ -12,7 +11,7 @@ function printData() {
   const screen = document.getElementById('_welcome');
   screen.style = 'display:none';
   document.getElementById('_welcome1').style.display = 'block';
-  data.pokemon.forEach((pokemon) => { // recorremos todos los productos
+  currentPokemon.forEach((pokemon) => { // recorremos todos los productos
     const namePokemon = `<div  class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
     <dt>TYPE: ${pokemon.type} </dt>
     <div class="overlay translucent"></div>
@@ -78,14 +77,6 @@ for (let i = 0; i < elementType.length; i += 1) {
     });
   });
 }
-// funcion oculta pantalla de BIENVENIDA
-/* function showAndHide() {
-  const screen = document.getElementById('_welcome');
-  screen.style = 'display:none';
-  document.getElementById('_welcome1').style.display = 'block';
-}
-document.getElementById('meet1').addEventListener('click', showAndHide); */
-// Funcion muestra todos de menor a mayor
 selectSort.addEventListener('change', () => {
   const valueSelect1 = selectSort.value;
   let pokemonsOrdered1 = [];
@@ -99,3 +90,11 @@ selectSort.addEventListener('change', () => {
   // printData1(currentPokemon);
   printData1(pokemonsOrdered1);
 });
+// funcion oculta pantalla de BIENVENIDA
+/* function showAndHide() {
+  const screen = document.getElementById('_welcome');
+  screen.style = 'display:none';
+  document.getElementById('_welcome1').style.display = 'block';
+}
+document.getElementById('meet1').addEventListener('click', showAndHide); */
+// Funcion muestra todos de menor a mayor
