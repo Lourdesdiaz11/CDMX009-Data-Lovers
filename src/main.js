@@ -5,16 +5,15 @@ import {
 
 const root = document.querySelector('#root'); // dibujamos la tabla
 const elementType = document.getElementsByClassName('elementType');
-// const showAll = document.getElementById('showAll');
-// const order =document.getElementById('Order');
 const allPokemon = data.pokemon;
 const currentPokemon = allPokemon;
-let selectSort = document.getElementById('select');
-let valueSelect = selectSort.value;
-let pokemonsOrdered = [];
+const selectSort = document.getElementById('select');
 
 // funcion llenado tarjeta pokemon
 function printData() {
+  const screen = document.getElementById('_welcome');
+  screen.style = 'display:none';
+  document.getElementById('_welcome1').style.display = 'block';
   data.pokemon.forEach((pokemon) => { // recorremos todos los productos
     const namePokemon = `<div  class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
     <dt>TYPE: ${pokemon.type} </dt>
@@ -29,16 +28,18 @@ function printData() {
     <dt>AVERANGE SPAWNS: ${pokemon.avg_spawns}</dt>
     <dt>SPAWN TIME:${pokemon.spawn_time}</dt>
     <dt>MULTIPLIERS:${pokemon.multipliers}</dt>
-    <dt>WEAKNESSES:${pokemon.weaknesses}</dt></div>
+    <dt>WEAKNESSES:</dt>
+    <dt>${pokemon.weaknesses}</dt></div>
     </div>`;
     root.insertAdjacentHTML('beforeend', namePokemon);
   });
 }
 document.getElementById('meet1').addEventListener('click', printData);
+// document.getElementById('meet2').addEventListener('click', printData);
 // funcion filtros por tipo de elemento
-function printData1(data) {
+function printData1(dataType) {
   root.innerHTML = '';
-  data.forEach((pokemon) => { // recorremos todos los productos
+  dataType.forEach((pokemon) => { // recorremos todos los productos
     const namePokemon = `<div  class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
     <dt>TYPE: ${pokemon.type} </dt>
     <div class="overlay translucent"></div>
@@ -52,19 +53,22 @@ function printData1(data) {
     <dt>AVERANGE SPAWNS: ${pokemon.avg_spawns}</dt>
     <dt>SPAWN TIME:${pokemon.spawn_time}</dt>
     <dt>MULTIPLIERS:${pokemon.multipliers}</dt>
-    <dt>WEAKNESSES:${pokemon.weaknesses}</dt></div>
+    <dt>WEAKNESSES:</dt>
+    <dt>${pokemon.weaknesses}</dt></div>
     </div>`;
     root.insertAdjacentHTML('beforeend', namePokemon);
   });
 }
 
 // funcion de filtrado de TIPO , A-Z y de Z-A
-for (let i = 0; i < elementType.length; i++) {
+for (let i = 0; i < elementType.length; i += 1) {
   elementType[i].addEventListener('click', () => {
     const elementPokemon = elementType[i].id;
     const pokemonType = filterType(currentPokemon, elementPokemon);
     printData1(pokemonType);
     selectSort.addEventListener('change', () => {
+      const valueSelect = selectSort.value;
+      let pokemonsOrdered = [];
       if (valueSelect === 'orderAZ') {
         pokemonsOrdered = sortbyNameAZ(pokemonType);
       } else if (valueSelect === 'orderZA') {
@@ -76,31 +80,24 @@ for (let i = 0; i < elementType.length; i++) {
     });
   });
 }
-
 // funcion oculta pantalla de BIENVENIDA
-function showAndHide() {
+/* function showAndHide() {
   const screen = document.getElementById('_welcome');
   screen.style = 'display:none';
   document.getElementById('_welcome1').style.display = 'block';
 }
-document.getElementById('meet1').addEventListener('click', showAndHide);
+document.getElementById('meet1').addEventListener('click', showAndHide); */
 // Funcion muestra todos de menor a mayor
-/* _showAll.addEventListener("click",() => {
-sortbyNumber1_151(currentPokemon)
-printData(currentPokemon)
-}) */
-
-selectSort = document.getElementById('select');
 selectSort.addEventListener('change', () => {
-  valueSelect = selectSort.value;
-  pokemonsOrdered = [];
-  if (valueSelect === 'orderAZ') {
+  const valueSelect1 = selectSort.value;
+  let pokemonsOrdered1 = [];
+  if (valueSelect1 === 'orderAZ') {
     sortbyNameAZ(currentPokemon);
-    pokemonsOrdered = sortbyNameAZ(currentPokemon);
-  } else if (valueSelect === 'orderZA') {
+    pokemonsOrdered1 = sortbyNameAZ(currentPokemon);
+  } else if (valueSelect1 === 'orderZA') {
     sortbyNameZA(currentPokemon);
-    pokemonsOrdered = sortbyNameZA(currentPokemon);
+    pokemonsOrdered1 = sortbyNameZA(currentPokemon);
   }
   // printData1(currentPokemon);
-  printData1(pokemonsOrdered);
+  printData1(pokemonsOrdered1);
 });

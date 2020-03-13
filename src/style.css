@@ -58,10 +58,11 @@ body{
 }
 #_welcome1{
   display: none;
+
 }
 .container_welcome{
   width: 100%;
-  margin:auto;
+  margin:inherit;
   background-color:#3532CC;
   display: flex;
   flex-direction: column;
@@ -89,7 +90,8 @@ flex-direction: column;
   flex-direction: column;
   position: absolute;
   background-color:  #333;
-  /* min-width:245px;  max-width:400px; */
+   /* min-width:800px;  max-width:800px;  */
+
   /* box-shadow: rgb(5, 13, 13); */
   z-index: 1;
 }

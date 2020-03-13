@@ -1,8 +1,8 @@
 // import data from './data/pokemon/pokemon.js';
 export function filterType(allPokemon, elementPokemon) {
   const filtered = [];
-  for (let i = 0; i < allPokemon.length; i++) {
-    for (let e = 0; e < allPokemon[i].type.length; e++) {
+  for (let i = 0; i < allPokemon.length; i += 1) {
+    for (let e = 0; e < allPokemon[i].type.length; e += 1) {
       if (allPokemon[i].type[e] === elementPokemon) {
         filtered.push(allPokemon[i]);
       }
@@ -43,7 +43,9 @@ export function sortbyNumber(pokemonArray) {
   });
   return sortNumber;
 }
-const pokemons = { filterType };
+const pokemons = {
+  filterType, sortbyNameAZ, sortbyNameZA, sortbyNumber,
+};
 export default pokemons;
 
 /* export function filterName(allPokemon, namepokemon) {
