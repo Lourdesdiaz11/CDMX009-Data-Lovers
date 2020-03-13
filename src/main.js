@@ -1,7 +1,5 @@
 import data from './data/pokemon/pokemon.js';
-import {
-  filterType, sortbyNameAZ, sortbyNameZA, sortbyNumber,
-} from './data.js';
+import pokemons from './data.js';
 
 const root = document.querySelector('#root'); // dibujamos la tabla
 const elementType = document.getElementsByClassName('elementType');
@@ -64,17 +62,17 @@ function printData1(dataType) {
 for (let i = 0; i < elementType.length; i += 1) {
   elementType[i].addEventListener('click', () => {
     const elementPokemon = elementType[i].id;
-    const pokemonType = filterType(currentPokemon, elementPokemon);
+    const pokemonType = pokemons.filterType(currentPokemon, elementPokemon);
     printData1(pokemonType);
     selectSort.addEventListener('change', () => {
       const valueSelect = selectSort.value;
       let pokemonsOrdered = [];
       if (valueSelect === 'orderAZ') {
-        pokemonsOrdered = sortbyNameAZ(pokemonType);
+        pokemonsOrdered = pokemons.sortbyNameAZ(pokemonType);
       } else if (valueSelect === 'orderZA') {
-        pokemonsOrdered = sortbyNameZA(pokemonType);
+        pokemonsOrdered = pokemons.sortbyNameZA(pokemonType);
       } else if (valueSelect === 'defaultOption') {
-        pokemonsOrdered = sortbyNumber(pokemonType);
+        pokemonsOrdered = pokemons.sortbyNumber(pokemonType);
       }
       printData1(pokemonsOrdered);
     });
@@ -92,11 +90,11 @@ selectSort.addEventListener('change', () => {
   const valueSelect1 = selectSort.value;
   let pokemonsOrdered1 = [];
   if (valueSelect1 === 'orderAZ') {
-    sortbyNameAZ(currentPokemon);
-    pokemonsOrdered1 = sortbyNameAZ(currentPokemon);
+    pokemons.sortbyNameAZ(currentPokemon);
+    pokemonsOrdered1 = pokemons.sortbyNameAZ(currentPokemon);
   } else if (valueSelect1 === 'orderZA') {
-    sortbyNameZA(currentPokemon);
-    pokemonsOrdered1 = sortbyNameZA(currentPokemon);
+    pokemons.sortbyNameZA(currentPokemon);
+    pokemonsOrdered1 = pokemons.sortbyNameZA(currentPokemon);
   }
   // printData1(currentPokemon);
   printData1(pokemonsOrdered1);
