@@ -2,14 +2,6 @@
 
 ## 3. Objetivos de aprendizaje
 
-El objetivo principal de este proyecto es que, entendiendo las necesidades de
-tus usuarios, aprendas a diseñar y construir una interfaz web donde se pueda
-visualizar y manipular data.
-
-Revisa la lista y reflexiona sobre los objetivos que conseguiste en el
-proyecto anterior. Piensa en eso al decidir tu estrategia de trabajo individual
-y de equipo.
-
 ### UX
 
 - [✓] Diseñar la aplicación pensando y entendiendo al usuario.
@@ -54,7 +46,7 @@ y de equipo.
 - [✓] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [✓] Utilizar linter para seguir buenas prácticas (ESLINT).
 
-### Pokédex
+# Pokédex
 
 Es una página contenedora de todos los datos necesarios para ser un maestro pokémon. Contiene todas las características e información necesaria para usar en Pokémon GO de los 151 primeros pokemones de la región de Kanto. Puedes encontrar a los personajes mediante filtros (órden alfabético de la A-Z y Z-A) o por categorías (agua, fuego, hielo, dragón, planta, veneno, etc). Es una web intuitiva y fácil de manejar. Sin necesidad de seguir instrucciones el usuario puede acceder a toda la información que contiene.
 
@@ -65,7 +57,7 @@ Es una página contenedora de todos los datos necesarios para ser un maestro pok
 -Como jugador de pokemon quiero saber las debilidades de los pokemon para saber con cual jugar y ganar
 -El usuario podrá ver la ficha técnica de cada pokemon para saber sus debilidades.
 
-####Historia Uno
+####Historia Dos
 
 
 ### Diseño de la Interfaz de Usuario
