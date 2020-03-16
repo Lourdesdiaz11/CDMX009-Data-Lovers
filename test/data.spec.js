@@ -8,6 +8,9 @@ describe('pokemons', () => {
     it('should be a function', () => {
       expect(typeof pokemons.filterType).toBe('function');
     });
+    it('should return "3" for "Type:Dragon"', () => {
+      expect(pokemons.filterType('Dragon')).toHaveLength(3);
+    });
   });
   describe('pokemons.sortbyNameAZ', () => {
     it('should be a function', () => {

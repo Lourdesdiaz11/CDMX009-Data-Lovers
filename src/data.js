@@ -1,14 +1,8 @@
-// import data from './data/pokemon/pokemon.js';
-function filterType(allPokemon, elementPokemon) {
-  const filtered = [];
-  for (let i = 0; i < allPokemon.length; i += 1) {
-    for (let e = 0; e < allPokemon[i].type.length; e += 1) {
-      if (allPokemon[i].type[e] === elementPokemon) {
-        filtered.push(allPokemon[i]);
-      }
-    }
-  }
-  return filtered;
+import data from './data/pokemon/pokemon.js';
+
+function filterType(type) {
+  const filter = data.pokemon.filter((poke) => poke.type.includes(type));
+  return filter;
 }
 function sortbyNameAZ(pokemonArray) {
   const sortName = pokemonArray.sort((prev, next) => {
@@ -47,14 +41,3 @@ const pokemons = {
   filterType, sortbyNameAZ, sortbyNameZA, sortbyNumber,
 };
 export default pokemons;
-/* export function filterName(allPokemon, namepokemon) {
-  let filtered1 = [];
-      for (let i = 0; i < allPokemon.length; i++){
-          for (let e = 0; e < allPokemon[i].id.length; e++) {
-              if(allPokemon[i].id[e] === elementPokemon){
-                  filtered.push(allPokemon[i]);
-              }
-          }
-      }
-      return filtered1;
-  } */
