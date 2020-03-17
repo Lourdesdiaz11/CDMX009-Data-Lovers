@@ -99,3 +99,11 @@ Se hicieron los testeos con diferentes personas usando nuestro preyecto final. T
 - Pantalla Poquedéx
 
 ![Prototipo_altaFidelidad](proyectoFinal.png)
+
+- Pagina del proyecto
+
+- https://lourdesdiaz11.github.io/CDMX009-Data-Lovers/
+
+#### Creditos
+- Lourdes Diaz
+- Nallely Flores
