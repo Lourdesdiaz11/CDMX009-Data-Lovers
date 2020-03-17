@@ -65,15 +65,8 @@ Es una página contenedora de todos los datos necesarios para ser un maestro pok
 - Como usuario desea poder ver por Tipo de elemento a que corresponde cada pokemon.
 - El usuario podrá filtrar por Tipo de elemento ; Si desea ver tipo Agua desplegara un lista con los que pertenecen a ese elemento.
 
-
-### Diseño de la Interfaz de Usuario
-
 #### Prototipo de baja fidelidad
-
-Durante tu trabajo deberás haber hecho e iterado bocetos (_sketches_) de tu
-solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
-iteraciones que hagas, que las subas a tu repositorio y las menciones en tu
-`README.md`.
+![Prototipo_BajaFidelidad](bajaFidelidad.png)
 
 #### Prototipo de alta fidelidad
 
