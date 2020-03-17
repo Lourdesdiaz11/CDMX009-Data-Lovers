@@ -66,22 +66,14 @@ Es una página contenedora de todos los datos necesarios para ser un maestro pok
 - El usuario podrá filtrar por Tipo de elemento ; Si desea ver tipo Agua desplegara un lista con los que pertenecen a ese elemento.
 
 #### Prototipo de baja fidelidad
-![Prototipo_BajaFidelidad](bajaFidelidad.png)
+- Prototipo Principal
+![Prototipo_bajaFidelidad](bajaFidelidad.png)
+- Prototipo despues de _feedback_
+![Prototipo_bajaFidelidad](bajaFidelidad1.png)
 
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc. Recuerda utilizar la
-[identidad gráfica](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE)
-correspondiente a cada set de datos que elijas.
-
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu
-diseño debe seguir los fundamentos de _visual design_.
+![Prototipo_altaFidelidad](altaFidelidad.png)
 
 #### Testeos de usabilidad
 
