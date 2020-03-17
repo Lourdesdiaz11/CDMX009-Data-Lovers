@@ -66,22 +66,31 @@ Es una página contenedora de todos los datos necesarios para ser un maestro pok
 - El usuario podrá filtrar por Tipo de elemento ; Si desea ver tipo Agua desplegara un lista con los que pertenecen a ese elemento.
 
 #### Prototipo de baja fidelidad
+
 - Prototipo Principal
+
 ![Prototipo_bajaFidelidad](bajaFidelidad.png)
+
 - Prototipo despues de _feedback_
+
 ![Prototipo_bajaFidelidad](bajaFidelidad1.png)
 
 #### Prototipo de alta fidelidad
 
+- Prototipo Principal
+
 ![Prototipo_altaFidelidad](altaFidelidad.png)
+
+- Prototipo despues de _feedback_
+
+![Prototipo_altaFidelidad](altaFidelidad1.png)
 
 #### Testeos de usabilidad
 
-Durante el reto deberás hacer _tests_ de usabilidad con distintos usuarios, y
-en base a los resultados, deberás iterar tus diseños. Cuéntanos
-qué problemas de usabilidad detectaste a través de los _tests_ y cómo los
-mejoraste en tu propuesta final.
+Objetivos de testeo
 
+Probar la usabilidad de los filtros de la aplicación.
+Probar si las categorías son las adecuadas.
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
 Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
