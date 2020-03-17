@@ -91,3 +91,11 @@ Objetivos de testeo
 
 - Probar la usabilidad de los filtros de la aplicación.
 - Probar si las categorías son las adecuadas.
+
+Se hicieron los testeos con diferentes personas usando nuestro preyecto final. Todas pruebas resultaron positivas, pudieron usar el proyecto final.
+
+#### Proyecto Final
+
+- Pantalla Poquedéx
+
+![Prototipo_altaFidelidad](proyectoFinal.png)
