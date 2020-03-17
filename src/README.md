@@ -53,11 +53,11 @@ Es una página contenedora de todos los datos necesarios para ser un maestro pok
 
 ### Historias de usuario
 
-####Historia Uno
+#### Historia Uno
 -Como jugador de pokemon quiero saber las debilidades de los pokemon para saber con cual jugar y ganar
 -El usuario podrá ver la ficha técnica de cada pokemon para saber sus debilidades.
 
-####Historia Dos
+#### Historia Dos
 
 
 ### Diseño de la Interfaz de Usuario
