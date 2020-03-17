@@ -54,16 +54,16 @@ Es una página contenedora de todos los datos necesarios para ser un maestro pok
 ### Historias de usuario
 
 #### Historia Uno
--Como jugador de pokemon quiero saber las debilidades de los pokemon para saber con cual jugar y ganar.
--El usuario podrá ver la ficha técnica de cada pokemon para saber sus debilidades.
+- Como jugador de pokemon quiero saber las debilidades de los pokemon para saber con cual jugar y ganar.
+- El usuario podrá ver la ficha técnica de cada pokemon para saber sus debilidades.
 
 #### Historia Dos
--Como usuario quiero filtar los pokemon por orden alfabético para encontrar mas rápido un pokemon.
--El usuario tendrá acceso a un filtro de orden A-Z y de Z-A.
+- Como usuario quiero filtar los pokemon por orden alfabético para encontrar mas rápido un pokemon.
+- El usuario tendrá acceso a un filtro de orden A-Z y de Z-A.
 
 #### Historia Tres
--Como usuario desea poder ver por Tipo de elemento a que corresponde cada pokemon.
--El usuario podrá filtrar por Tipo de elemento ; Si desea ver tipo Agua desplegara un lista con los que pertenecen a ese elemento.
+- Como usuario desea poder ver por Tipo de elemento a que corresponde cada pokemon.
+- El usuario podrá filtrar por Tipo de elemento ; Si desea ver tipo Agua desplegara un lista con los que pertenecen a ese elemento.
 
 
 ### Diseño de la Interfaz de Usuario
