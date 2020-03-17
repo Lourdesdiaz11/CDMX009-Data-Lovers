@@ -8,8 +8,8 @@ const selectSort = document.getElementById('select');
 
 // funcion llenado tarjeta pokemon
 function printData() {
-  const screen = document.getElementById('_welcome');
-  screen.style = 'display:none';
+  const scree = document.getElementById('_welcome');
+  scree.style = 'display:none';
   document.getElementById('_welcome1').style.display = 'block';
   currentPokemon.forEach((pokemon) => { // recorremos todos los productos
     const namePokemon = `<div  class="tarjeta" id="card"><figure> <img = class "imageBox" src ="${pokemon.img}"> </figure>  ${pokemon.num} ${pokemon.name}
@@ -32,7 +32,6 @@ function printData() {
   });
 }
 document.getElementById('meet1').addEventListener('click', printData);
-// document.getElementById('meet2').addEventListener('click', printData);
 // funcion filtros por tipo de elemento
 function printData1(dataType) {
   root.innerHTML = '';
@@ -56,12 +55,11 @@ function printData1(dataType) {
     root.insertAdjacentHTML('beforeend', namePokemon);
   });
 }
-
 // funcion de filtrado de TIPO , A-Z y de Z-A
 for (let i = 0; i < elementType.length; i += 1) {
   elementType[i].addEventListener('click', () => {
     const elementPokemon = elementType[i].id;
-    const pokemonType = pokemons.filterType(currentPokemon, elementPokemon);
+    const pokemonType = pokemons.filterType(elementPokemon);
     printData1(pokemonType);
     selectSort.addEventListener('change', () => {
       const valueSelect = selectSort.value;
@@ -90,11 +88,3 @@ selectSort.addEventListener('change', () => {
   // printData1(currentPokemon);
   printData1(pokemonsOrdered1);
 });
-// funcion oculta pantalla de BIENVENIDA
-/* function showAndHide() {
-  const screen = document.getElementById('_welcome');
-  screen.style = 'display:none';
-  document.getElementById('_welcome1').style.display = 'block';
-}
-document.getElementById('meet1').addEventListener('click', showAndHide); */
-// Funcion muestra todos de menor a mayor
