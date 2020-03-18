@@ -79,12 +79,11 @@ selectSort.addEventListener('change', () => {
   const valueSelect1 = selectSort.value;
   let pokemonsOrdered1 = [];
   if (valueSelect1 === 'orderAZ') {
-    pokemons.sortbyNameAZ(currentPokemon);
     pokemonsOrdered1 = pokemons.sortbyNameAZ(currentPokemon);
   } else if (valueSelect1 === 'orderZA') {
-    pokemons.sortbyNameZA(currentPokemon);
     pokemonsOrdered1 = pokemons.sortbyNameZA(currentPokemon);
+  }else if (valueSelect1 === 'defaultOption') {
+    pokemonsOrdered1 = pokemons.sortbyNumber(currentPokemon);
   }
-  // printData1(currentPokemon);
   printData1(pokemonsOrdered1);
 });
