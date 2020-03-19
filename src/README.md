@@ -22,18 +22,18 @@
 - LU   NA
 - [✓] [✓] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
 - [✓] [✓] Manejar eventos del DOM. (addEventListener)
--  X  [✓] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+-  X   [✓] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
 
 ### Javascript
 
 - LU   NA
-- [X] [✓] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
-- [X] [✓] Manipular objects (key | value).
-- [X] [✓] Entender el uso de condicionales (`if-else` | `switch`).
-- [X] [✓] Entender el uso de bucles (`for` | `forEach`).
-- [X] [✓] Entender la diferencia entre expression y statements.
-- [X] [✓] Utilizar funciones (parámetros | argumentos | valor de retorno).
-- [X] [✓] Entender la diferencia entre tipos de datos atómicos y estructurados.
+-  X   [✓] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
+-  X   [✓] Manipular objects (key | value).
+-  X   [✓] Entender el uso de condicionales (`if-else` | `switch`).
+-  X   [✓] Entender el uso de bucles (`for` | `forEach`).
+-  X   [✓] Entender la diferencia entre expression y statements.
+-  X   [✓] Utilizar funciones (parámetros | argumentos | valor de retorno).
+-  X   [✓] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [✓] [✓] Utilizar ES Modules (`import` | `export`).
 
 ### Pruebas Unitarias (_testing_)
