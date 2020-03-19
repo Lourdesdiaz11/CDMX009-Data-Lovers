@@ -82,7 +82,7 @@ selectSort.addEventListener('change', () => {
     pokemonsOrdered1 = pokemons.sortbyNameAZ(currentPokemon);
   } else if (valueSelect1 === 'orderZA') {
     pokemonsOrdered1 = pokemons.sortbyNameZA(currentPokemon);
-  }else if (valueSelect1 === 'defaultOption') {
+  } else if (valueSelect1 === 'defaultOption') {
     pokemonsOrdered1 = pokemons.sortbyNumber(currentPokemon);
   }
   printData1(pokemonsOrdered1);
